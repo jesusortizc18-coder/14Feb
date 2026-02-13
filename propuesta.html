@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propuesta Especial</title>
+    <link rel="stylesheet" href="propuesta.css" />
+  </head>
+  <body>
+    <div id="inicio" class="container">
+      <h1>Hola Croffin!</h1>
+      <button onclick="mostrarPregunta()" class="btn-principal">
+        haz click aqui
+      </button>
+    </div>
+
+    <div id="modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <h2 id="pregunta-texto">¿Quieres ser mi san valentin este 14feb?</h2>
+        <div class="options">
+          <button id="btn-si" onclick="aceptar()">si</button>
+          <button id="btn-no" onclick="rechazar()">no</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="final" class="container hidden">
+      <h1>Perfecto mi amor!! no esperaba menos ;)</h1>
+      <img src="imagen14.jpg" alt="Love u melocochoncho" class="img-final" />
+    </div>
+
+    <script src="propuesta.js"></script>
+  </body>
+</html>
